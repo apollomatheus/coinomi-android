@@ -3,11 +3,11 @@ package com.coinomi.core.coins;
 import com.coinomi.core.coins.families.BitFamily;
 
 /**
- * @author John L. Jegutanis
+ * @author Apollo
  */
-public class DashMain extends BitFamily {
-    private DashMain() {
-        id = "dash.main"; // Do not change this id as wallets serialize this string
+public class ZCoreMain extends BitFamily {
+    private ZCoreMain() {
+        id = "zcore.main"; // Do not change this id as wallets serialize this string
 
         addressHeader = 76;
         p2shHeader = 16;
@@ -15,19 +15,19 @@ public class DashMain extends BitFamily {
         spendableCoinbaseDepth = 100;
         dumpedPrivateKeyHeader = 204;
 
-        name = "Dash";
-        symbol = "DASH";
-        uriScheme = "dash"; // TODO add multi uri, darkcoin
+        name = "ZCore";
+        symbol = "ZCR";
+        uriScheme = "zcore"; // TODO add multi uri
         bip44Index = 5;
         unitExponent = 8;
         feeValue = value(100000);
-        minNonDust = value(1000); // 0.00001 DASH mininput
-        softDustLimit = value(100000); // 0.001 DASH
+        minNonDust = value(1000); // 0.00001 ZCore mininput
+        softDustLimit = value(100000); // 0.001 ZCore
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
-        signedMessageHeader = toBytes("DarkCoin Signed Message:\n");
+        signedMessageHeader = toBytes("ZCore Signed Message:\n");
     }
 
-    private static DashMain instance = new DashMain();
+    private static ZCoreMain instance = new ZCoreMain();
     public static synchronized CoinType get() {
         return instance;
     }
