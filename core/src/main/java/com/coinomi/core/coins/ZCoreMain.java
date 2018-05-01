@@ -18,7 +18,7 @@ public class ZCoreMain extends BitFamily {
         name = "ZCore";
         symbol = "ZCR";
         uriScheme = "zcore"; // TODO add multi uri
-        bip44Index = 22;
+        bip44Index = 5;
         unitExponent = 8;
         feeValue = value(100000);
         minNonDust = value(1000); // 0.00001 ZCore mininput
