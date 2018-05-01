@@ -30,7 +30,7 @@ public enum CoinID {
     DOGECOIN_TEST(DogecoinTest.get()),
     REDDCOIN_MAIN(ReddcoinMain.get()),
     PEERCOIN_MAIN(PeercoinMain.get()),
-    DASH_MAIN(DashMain.get()),
+    ZCORE_MAIN(ZCoreMain.get()),
     NUBITS_MAIN(NuBitsMain.get()),
     NUSHARES_MAIN(NuSharesMain.get()),
     NAMECOIN_MAIN(NamecoinMain.get()),
