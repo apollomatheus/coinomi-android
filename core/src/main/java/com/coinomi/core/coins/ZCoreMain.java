@@ -9,8 +9,8 @@ public class ZCoreMain extends BitFamily {
     private ZCoreMain() {
         id = "zcore.main"; // Do not change this id as wallets serialize this string
 
-        addressHeader = 76;
-        p2shHeader = 16;
+        addressHeader = 80;
+        p2shHeader = 0;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 100;
         dumpedPrivateKeyHeader = 204;
@@ -18,7 +18,7 @@ public class ZCoreMain extends BitFamily {
         name = "ZCore";
         symbol = "ZCR";
         uriScheme = "zcore"; // TODO add multi uri
-        bip44Index = 5;
+        bip44Index = 22;
         unitExponent = 8;
         feeValue = value(100000);
         minNonDust = value(1000); // 0.00001 ZCore mininput
